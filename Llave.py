@@ -15,11 +15,3 @@ def XOR(n):
     
 #print(XOR(binario))
 
-def base2dec(nums, base):
-    if len(nums) == 1:
-        return nums[0]
-    else:
-        return nums[-1] + base * base2dec(nums[:-1], base)
-
-print (base2dec([1,1,1],2))
-
